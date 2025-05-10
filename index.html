@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive web page design for a web development certificate.">
+    <meta name="author" content="Barisitom Akpee">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/course.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h1>Rubia M. Francesco</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Toloria, Madagascar</h2>
+            <img src="images/toloria.jpg" alt="Baobab Trees">
+            <p>Baobab Trees</p>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <button onclick="showAll()">All</button>
+                <button onclick="showCSE()">CSE</button>
+                <button onclick="showWDD()">WDD</button>
+            </div>
+            <div class="courses" id="courses"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Rubia Magdalena Francesco 🌺 Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
