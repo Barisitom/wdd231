@@ -1,28 +1,66 @@
 /* large.css - Styles for larger screens */
 @media (min-width: 768px) {
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 3rem;
+        
+        padding: 0.5rem 0rem 0rem 0rem ;
     }
 
     .header-content {
         display: flex;
-        align-items: center;
+         justify-content:center;
+        align-items:center;
         gap: 1rem;
+        margin: 10px;
+    }
+    nav{
+        padding: 20px;
+        background-color: black;
     }
 
     nav ul {
-        gap: 2rem;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        gap: 1rem;
     }
 
     main {
-        display: flex;
-        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows:repeat(6, 1fr)  ;
+        gap: 0.5rem;
     }
 
     .course-work, .location, .certificate {
-        flex: 1;
+        border: 1px solid black;
+        border-radius: 7px;
+    }
+
+    h1{
+        margin: 0px;
+        padding: 0px;
+       grid-column: 1/end;
+    }
+
+    .course-work{
+        grid-column: 1/5;
+        grid-row: 2/4;
+       
+    }
+
+    h2{
+        background-color: green;
+        margin: 0px 0px 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .location{
+        grid-column: 5/end;
+        grid-row: 2/4;
+    }
+    .certificate{
+        grid-column: 1/end;
+        grid-row: 4/end;
     }
 }
