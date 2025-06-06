@@ -1,0 +1,38 @@
+{
+  "family_name": "Akpee",
+  "move_in_date": "1980-11-09",
+  "number_of_people": 6,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Bariduura Akpee",
+      "gender": "Male",
+      "birthdate": "1975-05-15"
+    },
+    {
+      "name": "Stella Akpee",
+      "gender": "Female",
+      "birthdate": "1974-05-15"
+    },
+    {
+      "name": "Tornubari Akpee",
+      "gender": "Male",
+      "birthdate": "1988-05-15"
+    },
+    {
+      "name": "Barisitom Akpee",
+      "gender": "Male",
+      "birthdate": "1990-11-09"
+    },
+    {
+      "name": "Barivule Akpee",
+      "gender": "Male",
+      "birthdate": "1992-03-05"
+    },
+    {
+      "name": "Promise Akpee",
+      "gender": "Male",
+      "birthdate": "1986-11-10"
+    }
+  ]
+}

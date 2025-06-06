@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sahara Solar",
+    "address": "123 Sun St, Timbuktu",
+    "phone": "223-555-1001",
+    "Email": "sahara@gmail.com",
+    "website": "https://saharasolar.ml",
+    "image": "sahara-solar.png",
+    "membership": 3
+  },
+  {
+    "name": "Desert Foods",
+    "address": "456 Grain Rd, Timbuktu",
+    "phone": "223-555-1002",
+    "Email": "desert@gmail.com",
+    "website": "https://desertfoods.ml",
+    "image": "desert-foods.png",
+    "membership": 1
+  },
+  {
+    "name": "Tuareg Tours",
+    "address": "789 Camel Ln, Timbuktu",
+    "phone": "223-555-1003",
+    "Email": "tours@gmail.com",
+    "website": "https://tuaregtours.ml",
+    "image": "tuareg-tours.png",
+    "membership": 2
+  },
+  {
+    "name": "Oasis Tech",
+    "address": "12 Tech Valley, Timbuktu",
+    "phone": "223-555-1004",
+    "Email": "oasis@gmail.com",
+    "website": "https://oasistech.ml",
+    "image": "oasis-tech.png",
+    "membership": 3
+  },
+  {
+    "name": "Nomad Textiles",
+    "address": "34 Fabric Street, Timbuktu",
+    "phone": "223-555-1005",
+    "Email": "nomad@gmail.com",
+    "website": "https://nomadtextiles.ml",
+    "image": "nomad-textiles.png",
+    "membership": 2
+  },
+  {
+    "name": "Sahara Bank",
+    "address": "56 Credit Ave, Timbuktu",
+    "phone": "223-555-1006",
+    "Email": "tornubari@gmail.com",
+    "website": "https://saharabank.ml",
+    "image": "sahara-bank.png",
+    "membership": 3
+  },
+  {
+    "name": "Timbuktu Prints",
+    "address": "78 Ink Rd, Timbuktu",
+    "phone": "223-555-1007",
+    "Email": "barivuele@gmail.com",
+    "website": "https://timbuktuprints.ml",
+    "image": "timbuktu-prints.png",
+    "membership": 1
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Sunrise Bakery",
+      "address": "123 Main St, Timbuktu",
+      "phone": "123-456-7890",
+      "website": "https://sunrisebakery.example.com",
+      "image": "sunrise-bakery.png",
+      "membership": 1
+    },
+    {
+      "name": "TechTimbuktu",
+      "address": "456 Innovation Rd, Timbuktu",
+      "phone": "234-567-8901",
+      "website": "https://techtimbuktu.example.com",
+      "image": "techtimbuktu.png",
+      "membership": 3
+    },
+    {
+      "name": "Green Earth Grocers",
+      "address": "789 Market Blvd, Timbuktu",
+      "phone": "345-678-9012",
+      "website": "https://greenearth.example.com",
+      "image": "green-earth.png",
+      "membership": 2
+    },
+    {
+      "name": "Timbuktu Fitness Center",
+      "address": "321 Fit Lane, Timbuktu",
+      "phone": "456-789-0123",
+      "website": "https://timbuktufitness.example.com",
+      "image": "fitness-center.png",
+      "membership": 2
+    },
+    {
+      "name": "Bright Future Academy",
+      "address": "654 Education Ave, Timbuktu",
+      "phone": "567-890-1234",
+      "website": "https://brightfuture.example.com",
+      "image": "bright-future.png",
+      "membership": 1
+    },
+    {
+      "name": "Golden Services Consulting",
+      "address": "987 Business Park Dr, Timbuktu",
+      "phone": "678-901-2345",
+      "website": "https://goldenservices.example.com",
+      "image": "golden-services.png",
+      "membership": 3
+    },
+    {
+      "name": "Timbuktu Travel Agency",
+      "address": "111 Adventure St, Timbuktu",
+      "phone": "789-012-3456",
+      "website": "https://timbuktutravel.example.com",
+      "image": "travel-agency.png",
+      "membership": 1
+    }
+  ]
+}

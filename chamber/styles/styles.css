@@ -1,0 +1,193 @@
+
+/*HOME PAGE*/
+
+/* Reset/normalize example */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(47, 2, 58);
+  color: white;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .cta {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  padding: 1em;
+  background: rgb(47, 2, 58);
+  color: white;
+  border: none;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.card {
+  flex: 1 1 250px;
+  background: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-top: 4px solid rgb(47, 2, 58);
+}
+
+.business-showcase {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+
+.business-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 300px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.business-card p >a {
+  color: black;
+}
+
+footer {
+  background:  rgb(47, 2, 58);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer .social img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.social >a{
+  color: white;
+}
+
+/* Mobile Nav */
+#menuToggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  #menuToggle{
+    font-size: 2rem;
+    background: gray;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+   padding: .25rem 2vw;
+}
+
+#menuToggle::before{
+    content: '\2630';
+}
+
+ul#menu li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+li.active a{
+    background: rgba(0,0,0,0.1);
+}
+
+
+#menuToggle.open::before{
+    content: 'x';
+}
+
+ul#menu {
+    display: none;
+    list-style-type:none ;
+     margin: 0px;
+    padding: 0px;
+}
+
+
+ul#menu.open{
+    display: block;
+    
+}
+
+li a.open:hover{
+    background-color: #d8bdbd;   
+}
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
+
+
