@@ -6,11 +6,11 @@
   <meta name="description" content="Develop Chamber of Commerce - Supporting Local Businesses and Economic Development" />
   <meta name="author" content="Barisitom Akpee" />
 
-  <!-- Facebook Meta Tags -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Develop Chamber of Commerce" />
   <meta property="og:description" content="Promoting community, business networking, and economic development." />
   <meta property="og:image" content="images/social-preview.jpg" />
-  <meta property="og:url" content="https://web.facebook.com/profile.php?id=100018214265044" />
+  <meta property="og:url" content="https://yourdomain.com/chamber" />
 
   <link rel="icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="styles/styles.css" />
@@ -19,10 +19,9 @@
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="Logo" />
-      <h1>Develop</h1>
+      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50" />
       <p>Chamber of Commerce</p>
-      <button id="menuToggle"></button>
+      <button id="menuToggle" aria-label="Toggle Menu"></button>
     </div>
     <nav>
       <ul id="menu">
@@ -38,8 +37,11 @@
   </header>
 
   <main>
+    <!-- H1 heading should match page title -->
+    <h1>Develop Chamber of Commerce</h1>
+
     <section class="hero">
-      <img src="images/hero.png" alt="Hero" />
+      <img src="images/hero.png" alt="City landscape representing development" width="1200" height="600" />
       <button class="cta">Keynote Tickets</button>
     </section>
 
@@ -56,8 +58,8 @@
         <p>
           <strong id="temperature"></strong><br />
           <span id="description"></span><br />
-          <img id="graphic" src="" alt=""> <br>
-          High: <span id="temhigh"></span> | Low:<span id="temlow"></span> <br />
+          <img id="graphic" src="" alt="Weather icon" width="100" height="100" /> <br />
+          High: <span id="temhigh"></span> | Low: <span id="temlow"></span> <br />
           Humidity: <span class="humidity">34%</span><br />
           Sunrise: <span class="sunrise"></span><br />
           Sunset: <span class="sunset"></span>
@@ -66,7 +68,7 @@
       <div class="card">
         <h3>Weather Forecast</h3>
         <p>
-          Today: <strong >90°F</strong><br />
+          Today: <strong>90°F</strong><br />
           Wednesday: <strong>89°F</strong><br />
           Thursday: <strong>68°F</strong>
         </p>
@@ -75,16 +77,13 @@
 
     <section class="business-showcase">
       <div class="business-card">
-        <img src="images/business1.jpg" alt="Business 1" />
+        <img src="images/business1.jpg" alt="Photo of Business 1 office front" width="300" height="200" loading="lazy" />
         <h4>Business Name</h4>
         <p>Business Tag Line</p>
         <p><strong>Email:</strong> info@gmail.com</p>
         <p><strong>Phone:</strong> 800-555-1234</p>
-        <p><strong>URL:</strong> <a href="#"></a></p>
+        <p><strong>URL:</strong> <a href="#">Visit Website</a></p>
       </div>
-
-     
-    
     </section>
   </main>
 
@@ -95,9 +94,9 @@
       akpeebarisitom@gmail.com | (223) 555-2300</p>
     </div>
     <div class="social">
-      <a href="#"><img src="images/facebook.jpg" alt="facebook" /></a>
-      <a href="#"><img src="images/twitter.jpg" alt="Twitter" /></a>
-      <a href="#"><img src="images/linkdin.jpg" alt="LinkedIn" /></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Follow us on Facebook" width="30" height="30" loading="lazy" /></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Follow us on Twitter" width="30" height="30" loading="lazy" /></a>
+      <a href="#"><img src="images/linkdin.jpg" alt="Connect with us on LinkedIn" width="30" height="30" loading="lazy" /></a>
     </div>
     <div>
       <p>WDD231 Class Project<br />
@@ -107,6 +106,6 @@
     </div>
   </footer>
 
-  <script defer src="javascript/script.js"></script>
+  <script defer src="scripts/script.js"></script>
 </body>
 </html>
