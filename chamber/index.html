@@ -6,11 +6,11 @@
   <meta name="description" content="Develop Chamber of Commerce - Supporting Local Businesses and Economic Development">
   <meta name="author" content="Barisitom Akpee">
 
-  <!-- Facebook Meta Tags -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Develop Chamber of Commerce">
   <meta property="og:description" content="Promoting community, business networking, and economic development.">
-  <meta property="og:image" content="images/facebook.jpg">
-  <meta property="og:url" content="https://web.facebook.com/profile.php?id=100018214265044">
+  <meta property="og:image" content="images/og-image.jpg"> <!-- ✅ Updated to a local, appropriate image -->
+  <meta property="og:url" content="https://developchamber.org"> <!-- ✅ Updated to a local site URL -->
 
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
@@ -19,9 +19,9 @@
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="Logo" width="50" height="50">
-      <h1>Develop Chamber of Commerce</h1>
-      <button id="menuToggle"></button>
+      <img src="images/logo.webp" alt="Develop Chamber of Commerce Logo" width="50" height="50">
+      <p>Chamber of Commerce</p>
+      <button id="menuToggle" aria-label="Toggle navigation menu"></button>
     </div>
     <nav>
       <ul id="menu">
@@ -37,12 +37,13 @@
   </header>
 
   <main>
+    <h1>Develop Chamber of Commerce</h1> <!-- ✅ Moved inside <main> and matched page <title> -->
+
     <section class="hero">
-      <h2>Welcome to Develop Chamber of Commerce</h2>
+      <h2>Welcome to Our Chamber</h2> <!-- ✅ Added heading to fix section warning -->
       <img src="images/hero.png" alt="City landscape representing development" width="1200" height="600">
       <button class="cta">Keynote Tickets</button>
     </section>
-
 
     <h2>Home</h2>
 
@@ -75,10 +76,10 @@
     </section>
 
     <section class="business-showcase">
-      <h3>Featured Business</h3>
+      <h2>Featured Business</h2>
       <div class="business-card">
-        <img src="images/business1.jpg" alt="Business 1" width="300" height="200" loading="lazy">
-        <h4>Business Name</h4>
+        <img src="images/business1.jpg" alt="Business 1 exterior" width="300" height="200" loading="lazy">
+        <h3>Business Name</h3>
         <p>Business Tag Line</p>
         <p><strong>Email:</strong> info@gmail.com</p>
         <p><strong>Phone:</strong> 800-555-1234</p>
