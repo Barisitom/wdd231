@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Thank you for submitting your membership application." />
+  <title>Thank You – Chamber Membership</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: rgb(47, 2, 58);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #27ae60;
+    }
+
+    .message {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .data-display {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .data-item {
+      background: #e9f5fb;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .data-item strong {
+      display: block;
+      color: #006699;
+      margin-bottom: 0.3rem;
+    }
+
+    @media (max-width: 600px) {
+      .data-display {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Develop Chamber of Commerce</h2>
+  </header>
+
+  <main>
+    <h1>Thank You!</h1>
+    <p class="message">Your membership application has been received. Below is a summary of your submission:</p>
+
+    <section class="data-display" id="form-data">
+      <!-- JavaScript will inject data here -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Develop Chamber of Commerce
+  </footer>
+
+  <script>
+    // Insert current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Parse query string and return an object
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        firstName: params.get("firstName"),
+        lastName: params.get("lastName"),
+        email: params.get("email"),
+        phone: params.get("mobile"),
+        business: params.get("orgName"),
+        timestamp: params.get("timestamp"),
+      };
+    }
+
+    function displayFormData() {
+      const data = getQueryParams();
+      const formData = document.getElementById("form-data");
+
+      if (!data.firstName) {
+        formData.innerHTML = `<p>No form data found. Please return to the join form and try again.</p>`;
+        return;
+      }
+
+      const entries = {
+        "First Name": data.firstName,
+        "Last Name": data.lastName,
+        "Email": data.email,
+        "Mobile Number": data.phone,
+        "Business Name": data.business,
+        "Submitted On": new Date(data.timestamp).toLocaleString()
+      };
+
+      Object.entries(entries).forEach(([label, value]) => {
+        const div = document.createElement("div");
+        div.className = "data-item";
+        div.innerHTML = `<strong>${label}</strong><span>${value}</span>`;
+        formData.appendChild(div);
+      });
+    }
+
+    displayFormData();
+  </script>
+</body>
+</html>
