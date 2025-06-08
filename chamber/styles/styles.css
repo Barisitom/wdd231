@@ -26,7 +26,7 @@ header {
 }
 
 .logo img {
-  width: 50px;
+  width: 40px;
 }
 
 nav ul {
@@ -115,6 +115,157 @@ footer .social img {
 .social >a{
   color: white;
 }
+/*form css*/
+
+  form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 5px #2980b9aa;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Fieldset for membership radios */
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+fieldset legend {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #2c3e50;
+}
+
+fieldset label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: rgb(47, 2, 58);;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: rgb(47, 2, 58);;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 1rem auto 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: rgb(119, 9, 146);;
+  outline: none;
+}
+
+/* Membership Cards Section */
+#membershipCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* Each membership card */
+.membership-card {
+  background: white;
+  flex: 1 1 220px;
+  max-width: 220px;
+  border-radius: 15px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #2c3e50;
+  position: relative;
+  cursor: default;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: var(--delay);
+}
+
+.membership-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.membership-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.membership-card button {
+  background-color: rgb(47, 2, 58);;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.membership-card button:hover,
+.membership-card button:focus {
+  background-color: rgb(117, 7, 145);;
+  outline: none;
+}
+
 
 /* Mobile Nav */
 #menuToggle {
@@ -188,6 +339,94 @@ li a.open:hover{
   nav ul.show {
     display: flex;
   }
+
+
+/* Modal styles */
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 90%;
+  font-family: inherit;
+  color: #2c3e50;
+  position: relative;
+}
+
+dialog h4 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+dialog p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.close-modal {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  background-color: #992d22;
+  outline: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 3rem;
+  }
+
+  form {
+    flex: 2 1 60%;
+    margin-bottom: 0;
+  }
+
+  #membershipCards {
+    flex: 1 1 40%;
+    flex-direction: column;
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .membership-card {
+    max-width: 100%;
+    cursor: default;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
 }
 
 
