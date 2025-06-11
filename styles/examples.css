@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+
+header {
+  background: #1e3a5f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  
+}
+#menu-toggle::before{
+    content: '\2630';
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a.active, nav a:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #003366;
+}
+
+.course-work ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.location img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.filters button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.course {
+  padding: 1rem;
+  border-radius: 8px;
+  width: calc(33.333% - 1rem);
+  text-align: center;
+}
+
+.course.completed {
+  background: #6b3e26;
+  color: white;
+}
+
+.course.incomplete {
+  background: #e5e5e5;
+}
+
+footer {
+  background: #1e3a5f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+  
+  .courses {
+    flex-direction: column;
+  }
+
+  .course {
+    width: 100%;
+  }
+  #menu-toggle.active::before{
+    content: 'X';
+}
+}
