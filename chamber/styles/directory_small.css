@@ -1,4 +1,4 @@
-/* Small view */
+/* Small view styles */
 
 header {
   background-color: rgb(47, 2, 58);
@@ -13,6 +13,8 @@ header {
 
 h1 {
   padding: 20px;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -29,7 +31,7 @@ nav {
   cursor: pointer;
   width: 100%;
   text-align: left;
-  padding: .25rem 2vw;
+  padding: 0.25rem 2vw;
 }
 
 #myButton::before {
@@ -42,7 +44,7 @@ nav {
 
 ul.menuLinks {
   display: none;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -53,7 +55,7 @@ ul.menuLinks.open {
 
 ul.menuLinks li a {
   display: block;
-  padding: .75rem 2vw;
+  padding: 0.75rem 2vw;
   color: #fff;
   text-decoration: none;
 }
