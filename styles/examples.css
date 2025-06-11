@@ -97,10 +97,17 @@ h2 {
   max-width: 300px;
   border-radius: 10px;
 }
+.filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .filters button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  margin: 1rem;
+  padding: 0.5rem 3rem;
   cursor: pointer;
 }
 
