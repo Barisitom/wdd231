@@ -230,6 +230,27 @@ input[type="submit"]:focus {
   outline: none;
 }
 
+    /* Example animation on membership cards */
+    .membership-card {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: var(--delay);
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Modal styles (simplified) */
+    dialog {
+      border: none;
+      border-radius: 8px;
+      padding: 1em 2em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
 footer{
      background-color: rgb(47, 2, 58);
      color: white;
