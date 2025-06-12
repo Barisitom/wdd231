@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Join the Chamber - Develop Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/join_small.css" />
+  <link rel="stylesheet" href="styles/join_large.css" />
+  <script defer src="scripts/join.js"></script>
   <style>
     /* Example animation on membership cards */
     .membership-card {
@@ -32,22 +34,24 @@
   <!-- Header/Nav here -->
 <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="Logo" width="50" height="50">
-      <h1>Develop</h1>
-      <p>Chamber of Commerce</p>
-      <button id="menuToggle"></button>
+      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50"> <!-- Optimized image -->
+      Develop Chamber of Commerce 
     </div>
-    <nav>
-      <ul id="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Discover</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Podcast</a></li>
-        <li><a href="#">Events</a></li>
-      </ul>
-    </nav>
+    <button id="myButton"></button>
+  </header>
+
+  <nav>
+    <ul class="menuLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Podcast</a></li>
+      <li><a href="#">Events</a></li>
+    </ul>
+  </nav>
+
   </header>
 
   <main>
@@ -150,46 +154,12 @@
       <button type="button" class="close-modal">Close</button>
     </dialog>
   </main>
+<footer>
+  <h3>Develop Chamber of Commerce</h3>
+     <p> 75 aba road Port Harcourt Rivers, Nigeria <br>
+     Email: akpeebarisitom@gmail.com </p>
+    &copy; <span id="year"></span> <span id="lastModified"></span>
+  </footer>
 
-  <!-- Footer here -->
-
-  <script>
-    const hamburgerElement = document.querySelector('#menuToggle');
-    const navElement = document.querySelector('#menu');
-
-    hamburgerElement.addEventListener('click', () =>{
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-    
-})
-
-
-    // Set current date/time to hidden timestamp field
-    document.getElementById('timestamp').value = new Date().toISOString();
-
-    // Modal open/close logic
-    const buttons = document.querySelectorAll('[data-modal]');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const modalId = btn.getAttribute('data-modal');
-        const modal = document.getElementById(modalId);
-        modal.showModal();
-      });
-    });
-
-    const closeButtons = document.querySelectorAll('.close-modal');
-    closeButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.closest('dialog').close();
-      });
-    });
-
-    // Accessibility: close modal on Esc key
-    document.querySelectorAll('dialog').forEach(dialog => {
-      dialog.addEventListener('keydown', e => {
-        if (e.key === 'Escape') dialog.close();
-      });
-    });
-  </script>
 </body>
 </html>
