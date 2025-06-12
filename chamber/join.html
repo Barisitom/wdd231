@@ -6,37 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Develop Chamber of Commerce">
   <meta name="author" content="Barisitom Akpee">
-  <meta property="og:description" content="Promoting community, business networking, and economic development.">
+  <meta property="og:description" content="To give people and business a way to be part of the chamber of Commerce.">
   <meta property="og:image" content="images/facebook.jpg">
   <meta property="og:url" content="https://barisitom.github.io/wdd231/chamber/join.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/logo.webp">
   <meta property="og:url" content="https://github.com/chamber/join.html">
-
+  <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/join_small.css">
   <link rel="stylesheet" href="styles/join_large.css">
   <script defer src="scripts/join.js"></script>
 </head>
+    
+</head>
 <body>
-
-  <header>
+  <!-- Header/Nav here -->
+<header>
     <div class="logo">
-      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50">
+      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50"> <!-- Optimized image -->
       Develop Chamber of Commerce 
     </div>
     <button id="myButton"></button>
+  </header>
 
-    <nav>
-      <ul class="menuLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Podcast</a></li>
-        <li><a href="#">Events</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul class="menuLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Podcast</a></li>
+      <li><a href="#">Events</a></li>
+    </ul>
+  </nav>
+
   </header>
 
   <main>
@@ -44,41 +48,41 @@
     <form method="get" action="thankyou.html" id="joinForm">
       <label for="firstName">
         First Name:
-        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name" />
       </label>
 
       <label for="lastName">
         Last Name:
-        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name" />
       </label>
 
       <label for="orgTitle">
         Organizational Title:
         <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title"
-          pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters; letters, spaces, hyphens only.">
+          pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters; letters, spaces, hyphens only." />
       </label>
 
       <label for="email">
         Email:
-        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email">
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email" />
       </label>
 
       <label for="mobile">
         Mobile Phone:
-        <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number">
+        <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number" />
       </label>
 
       <label for="orgName">
         Business/Organization Name:
-        <input type="text" id="orgName" name="orgName" required autocomplete="organization" title="Enter your business or organization name">
+        <input type="text" id="orgName" name="orgName" required autocomplete="organization" title="Enter your business or organization name" />
       </label>
 
       <fieldset>
         <legend>Membership Level</legend>
-        <label><input type="radio" name="membership" value="NP" required> NP Membership (Non-Profit - No Fee)</label><br>
-        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label><br>
-        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label><br>
-        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+        <label><input type="radio" name="membership" value="NP" required /> NP Membership (Non-Profit - No Fee)</label><br/>
+        <label><input type="radio" name="membership" value="Bronze" /> Bronze Membership</label><br/>
+        <label><input type="radio" name="membership" value="Silver" /> Silver Membership</label><br/>
+        <label><input type="radio" name="membership" value="Gold" /> Gold Membership</label>
       </fieldset>
 
       <label for="orgDesc">
@@ -86,15 +90,63 @@
         <textarea id="orgDesc" name="orgDesc" title="Describe your business or organization"></textarea>
       </label>
 
-      <input type="hidden" name="timestamp" id="timestamp">
-      <input type="submit" value="Submit Membership Application">
-    </form>
-  </main>
+      <input type="hidden" name="timestamp" id="timestamp" />
 
-  <footer>
-    <h3>Develop Chamber of Commerce</h3>
-    <p>75 Aba Road Port Harcourt Rivers, Nigeria<br>
-    Email: akpeebarisitom@gmail.com</p>
+      <input type="submit" value="Submit Membership Application" />
+    </form>
+
+    <section id="membershipCards">
+      <div class="membership-card" style="--delay: 0s">
+        <h3>NP Membership</h3>
+        <p>For non-profit organizations, free membership.</p>
+        <button type="button" data-modal="modalNP">Learn More</button>
+      </div>
+      <div class="membership-card" style="--delay: 0.2s">
+        <h3>Bronze Membership</h3>
+        <p>Basic paid membership with some benefits.</p>
+        <button type="button" data-modal="modalBronze">Learn More</button>
+      </div>
+      <div class="membership-card" style="--delay: 0.4s">
+        <h3>Silver Membership</h3>
+        <p>Includes additional benefits and training.</p>
+        <button type="button" data-modal="modalSilver">Learn More</button>
+      </div>
+      <div class="membership-card" style="--delay: 0.6s">
+        <h3>Gold Membership</h3>
+        <p>Full benefits including advertising and events.</p>
+        <button type="button" data-modal="modalGold">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="modalNP">
+      <h4>NP Membership Benefits</h4>
+      <p>Free membership for non-profit organizations including networking and event invitations.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modalBronze">
+      <h4>Bronze Membership Benefits</h4>
+      <p>Basic membership with directory listing and newsletters.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modalSilver">
+      <h4>Silver Membership Benefits</h4>
+      <p>Includes Bronze benefits plus training and advertising opportunities.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modalGold">
+      <h4>Gold Membership Benefits</h4>
+      <p>All Silver benefits plus premium event access and spotlight advertising.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+  </main>
+<footer>
+  <h3>Develop Chamber of Commerce</h3>
+     <p> 75 aba road Port Harcourt Rivers, Nigeria <br>
+     Email: akpeebarisitom@gmail.com </p>
     &copy; <span id="year"></span> <span id="lastModified"></span>
   </footer>
 
