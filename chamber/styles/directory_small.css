@@ -100,10 +100,12 @@ ul.menuLinks li a:hover {
 }
 
 footer {
-  background: rgb(47, 2, 58);
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(47, 2, 58);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
 footer .social img {
