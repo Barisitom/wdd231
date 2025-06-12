@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Develop Park",
+    "image": "images/develop-park.webp",
+    "address": "123 Green Lane, Develop, Mali",
+    "description": "A scenic park with walking trails, gardens, and a playground."
+  },
+  {
+    "title": "City Museum",
+    "image": "images/city-museum.webp",
+    "address": "456 Heritage Rd, Develop, Mali",
+    "description": "Explore the rich history of Develop through interactive exhibits."
+  }
+ 
+]
