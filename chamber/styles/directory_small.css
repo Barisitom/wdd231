@@ -9,7 +9,13 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo img{
+  padding: 20px;
+ 
 }
 
 h1 {
