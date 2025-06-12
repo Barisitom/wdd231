@@ -1,11 +1,22 @@
 // Visit message logic
+
+
 const message = document.getElementById('visit-message');
 const lastVisit = localStorage.getItem('lastVisit');
+const hamburgerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('.menuLinks');
+
+hamburgerElement.addEventListener('click', () => {
+  navElement.classList.toggle('open');
+  hamburgerElement.classList.toggle('open');
+});
+
 const now = Date.now();
 
 if (!lastVisit) {
   message.textContent = "Welcome! Let us know if you have any questions.";
-} else {
+} 
+else {
   const days = Math.floor((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
   if (days < 1) {
     message.textContent = "Back so soon! Awesome!";
@@ -26,7 +37,7 @@ fetch('data/discover.json')
       card.className = 'card';
       card.innerHTML = `
         <h2>${item.title}</h2>
-        <figure><img src="${item.image}" alt="${item.title}"></figure>
+        
         <address>${item.address}</address>
         <p>${item.description}</p>
         <button>Learn More</button>
@@ -34,14 +45,3 @@ fetch('data/discover.json')
       container.appendChild(card);
     });
   });
-
-
-
-  const hamburgerElement = document.querySelector('#menuToggle');
-const navElement = document.querySelector('#menu');
-
-hamburgerElement.addEventListener('click', () =>{
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-    
-})
