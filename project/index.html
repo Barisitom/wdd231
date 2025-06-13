@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Community Fitness and Wellness Center - Empowering health through classes, events, and wellness programs.">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Community Fitness and Wellness Center">
+  <meta property="og:description" content="Empowering your health through accessible fitness and wellness programs.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Community Fitness & Wellness Center</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Fitness Center Logo" class="logo">
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="classes.html">Classes</a>
+        <a href="trainers.html">Trainers</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Empowering Health & Wellness</h1>
+      <p>Join your community in staying active and healthy.</p>
+      <img src="images/hero.jpg" alt="People doing yoga" loading="lazy">
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h2>Fitness Classes</h2>
+        <p>From yoga to high-intensity training, find the right fit for you.</p>
+      </div>
+      <div class="feature">
+        <h2>Personal Training</h2>
+        <p>Work 1-on-1 with certified trainers to reach your goals.</p>
+      </div>
+      <div class="feature">
+        <h2>Wellness Workshops</h2>
+        <p>Monthly sessions on nutrition, stress, and lifestyle tips.</p>
+      </div>
+    </section>
+
+    <section id="instructors" class="card-grid">
+      <!-- Dynamically loaded instructor cards -->
+    </section>
+
+    <section class="form-section">
+      <h2>Sign Up for Classes</h2>
+      <form id="signup-form" action="thanks.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="class">Choose a class:</label>
+        <select id="class" name="class">
+          <option value="yoga">Yoga</option>
+          <option value="hiit">HIIT</option>
+          <option value="strength">Strength Training</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Community Fitness & Wellness Center</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/demo-video" target="_blank">Project Demo</a></p>
+    <div class="social">
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Instagram">IG</a>
+    </div>
+  </footer>
+</body>
+
+</html>
