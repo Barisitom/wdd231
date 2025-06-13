@@ -1,0 +1,39 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 2rem;
+      background-color: #f8f9fa;
+      color: rgb(47, 2, 58);
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      background-color: rgb(47, 2, 58);
+      padding: 10px;
+    }
+
+    h1{
+      color: white;
+    } h2 {
+      color: rgb(47, 2, 58);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+
+    footer{
+      text-align: center;
+      color: white;
+      background-color: rgb(47, 2, 58);
+      padding: 10px;
+    }
