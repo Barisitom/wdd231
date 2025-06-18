@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Community Fitness and Wellness Center - Empowering health through classes, events, and wellness programs.">
-  <meta name="author" content="Your Name">
-  <meta property="og:title" content="Community Fitness and Wellness Center">
-  <meta property="og:description" content="Empowering your health through accessible fitness and wellness programs.">
-  <meta property="og:image" content="images/og-image.jpg">
-  <meta property="og:url" content="https://yourdomain.com">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Community Fitness and Wellness Center - Explore our fitness classes, wellness tips, and success stories." />
+  <meta name="author" content="Barisitom Akpee" />
+  <meta property="og:title" content="Community Fitness and Wellness Center" />
+  <meta property="og:description" content="Stay fit and healthy with us. Join today!" />
+  <meta property="og:image" content="images/hero.jpg" />
+  <link rel="icon" href="images/favicon2.ico" />
+  <link rel="stylesheet" href="styles/styles_small.css" />
+   <link rel="stylesheet" href="styles/styles_large.css" />
   <title>Community Fitness & Wellness Center</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <script type="module" src="scripts/main.js" defer></script>
 </head>
-
 <body>
   <header>
-    <div class="header-container">
-      <img src="images/logo.png" alt="Fitness Center Logo" class="logo">
-      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
-      <nav id="nav-links">
-        <a href="index.html">Home</a>
-        <a href="classes.html">Classes</a>
-        <a href="trainers.html">Trainers</a>
-        <a href="events.html">Events</a>
-        <a href="contact.html">Contact</a>
-        <a href="join.html">Join</a>
-      </nav>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50">
+      Community Fitness & Wellness Center 
     </div>
-  </header>
+    <button id="myButton"></button>
 
+    <nav>
+      <ul class="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html" class="active">Schedule</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    
+      </ul>
+    </nav>
+  </header>
   <main>
     <section class="hero">
-      <h1>Empowering Health & Wellness</h1>
-      <p>Join your community in staying active and healthy.</p>
-      <img src="images/hero.jpg" alt="People doing yoga" loading="lazy">
+      <img src="images/fitness_3.jpg" alt="Community exercising together" loading="lazy">
+      <h1>HOME</h1>
     </section>
 
-    <section class="features">
-      <div class="feature">
-        <h2>Fitness Classes</h2>
-        <p>From yoga to high-intensity training, find the right fit for you.</p>
-      </div>
-      <div class="feature">
-        <h2>Personal Training</h2>
-        <p>Work 1-on-1 with certified trainers to reach your goals.</p>
-      </div>
-      <div class="feature">
-        <h2>Wellness Workshops</h2>
-        <p>Monthly sessions on nutrition, stress, and lifestyle tips.</p>
-      </div>
+    <section class="showFitness" id="showFitness">
+      <h1>Various Training Categories</h1>
+      <h2 class="showType" id="showType"></h2>
+      <p class="showgoal" id="showgoal"></p>
+      <h3 class="showDuration" id="showDuration"></h3>
+      <!-- Cards dynamically inserted here via JS -->
+    </section>
+    
+    <section class="instructor" id="instructor">
+      <H1>VARIOUS INSTRUCTORS</H1>
+      <!-- Cards dynamically inserted here via JS -->
     </section>
 
-    <section id="instructors" class="card-grid">
-      <!-- Dynamically loaded instructor cards -->
+    <section class="successStories" id="successStories">
+      <H1>SUCCESS STORIES</H1>
+      <!-- Cards dynamically inserted here via JS -->
     </section>
 
-    <section class="form-section">
-      <h2>Sign Up for Classes</h2>
-      <form id="signup-form" action="thanks.html" method="get">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section class="weather" id="weather">
+      <div class="card">
+        <h3>Current Weather</h3>
+        <p id="town">Timbuktu</p>
+        <p>
+          <strong id="temperature"></strong><br>
+          <span id="description"></span><br>
+          <img id="graphic" src="images/placeholder.png" alt="Weather icon" width="100" height="100"><br>
+          High: <span id="temhigh"></span> | Low: <span id="temlow"></span><br>
+          Humidity: <span class="humidity">34%</span><br>
+          Sunrise: <span class="sunrise"></span><br>
+          Sunset: <span class="sunset"></span>
+        </p>
+      <!-- Cards dynamically inserted here via JS -->
+    </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="class">Choose a class:</label>
-        <select id="class" name="class">
-          <option value="yoga">Yoga</option>
-          <option value="hiit">HIIT</option>
-          <option value="strength">Strength Training</option>
-        </select>
-
-        <button type="submit">Register</button>
-      </form>
+    <section class="buttons">
+      <a href="programs.html" class="btn">Services</a>
+      <a href="contact.html" class="btn">Location</a>
+      <a href="contact.html" class="btn">Join</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Community Fitness & Wellness Center</p>
-    <p><a href="attributions.html">Attributions</a> | <a href="https://youtube.com/demo-video" target="_blank">Project Demo</a></p>
-    <div class="social">
-      <a href="#" aria-label="Facebook">FB</a>
-      <a href="#" aria-label="Instagram">IG</a>
+    <p>© 2025 Community Fitness & Wellness Center</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+      <a href="#">WhatsApp</a>
     </div>
+    <a href="attributions.html">Attributions</a> |
+    <a href="video-demo-link">Project Demo Video</a>
   </footer>
-</body>
 
+  <script src="scripts/home.js" type="module"></script>
+</body>
 </html>
