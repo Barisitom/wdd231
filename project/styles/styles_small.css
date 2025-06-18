@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Small view styles */
 
 header {
@@ -78,6 +79,10 @@ ul.menuLinks li a:hover {
   color: black;
 }
 
+.active :hover{
+  text-decoration: underline
+}
+
 .view-toggle {
   display: flex;
   gap: 10px;
@@ -88,7 +93,7 @@ ul.menuLinks li a:hover {
 
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Roboto, Verdana, sans-serif;
   margin: 0;
   background-color: #f8f9fa;
   color: #333;
