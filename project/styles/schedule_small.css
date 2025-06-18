@@ -1,0 +1,283 @@
+/* Small view styles */
+
+header {
+  background-color: rgb(56, 55, 55);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo img{
+  padding: 20px;
+ 
+}
+
+h1 {
+  display: block;
+  padding: 20px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: rgb(192, 185, 185);
+  margin: 0;
+  padding: 0;
+  color: rgb(47, 2, 58);
+}
+
+#myButton {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem 2vw;
+}
+
+#myButton::before {
+  content: '\2630'; /* Hamburger icon */
+}
+
+#myButton.open::before {
+  content: 'x'; /* Close icon */
+}
+
+ul.menuLinks {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menuLinks.open {
+  display: block;
+}
+
+ul.menuLinks li a {
+  display: block;
+  padding: 0.75rem 2vw;
+  color: rgb(47, 2, 58);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul.menuLinks li a:hover {
+  background-color: rgb(227, 151, 247);
+  color: black;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 10px;
+  margin: 1rem;
+}
+
+
+/* Common Schedule Styling */
+.shedule {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+}
+
+.schedule-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-header {
+  background-color: rgb(69, 2, 71);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-body img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card-info {
+  text-align: left;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card-info p {
+  margin: 0.5rem 0;
+}
+
+
+
+
+.payment {
+  padding: 2rem;
+  background: #f2f6fa;
+  text-align: center;
+}
+
+.payment-heading {
+  font-size: 2rem;
+  color: #2a2a72;
+  margin-bottom: 1.5rem;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.payment-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.payment-card:hover {
+  transform: scale(1.02);
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.payment-card h3 {
+  color: #2a2a72;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #00a86b;
+  margin-bottom: 0.5rem;
+}
+
+.payment-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .socials {
+  margin-top: 1rem;
+}
+
+footer .socials a {
+  margin: 0 1rem;
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .socials a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+
+dialog {
+  border: none;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 400px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: large;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 90%;
+  padding: 0.8rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  font-size:25px;
+}
+
+form input[type="submit"] {
+  background-color: rgb(47, 2, 58);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: large;
+  float:right;
+  
+}
+
+.close {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  float: right;
+  cursor: pointer;
+  background-color: rgb(47, 2, 58);
+  color: white;
+  padding: 7px;
+}

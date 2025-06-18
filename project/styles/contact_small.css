@@ -1,0 +1,167 @@
+/* contact.css */
+
+:root {
+  --primary-color: rgb(47, 2, 58);
+  --light-bg: #f8f9fa;
+  --accent: #58b368;
+  --text-dark: #333;
+  --text-light: #fff;
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-light);
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo img{
+  padding: 20px;
+ 
+}
+
+h1 {
+  display: block;
+  padding: 20px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+#myButton {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem 2vw;
+}
+
+#myButton::before {
+  content: '\2630'; /* Hamburger icon */
+}
+
+#myButton.open::before {
+  content: 'x'; /* Close icon */
+}
+
+ul.menuLinks {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menuLinks.open {
+  display: block;
+}
+
+ul.menuLinks li a {
+  display: block;
+  padding: 0.75rem 2vw;
+  color: var(--text-light);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul.menuLinks li a:hover {
+  background-color: rgb(227, 151, 247);
+  color: black;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 10px;
+  margin: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: var(--accent);
+  color: var(--text-light);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #3e8e57;
+}
+
+.location {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  #myButton {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+}
