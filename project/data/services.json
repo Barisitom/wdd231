@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Fitness Classes",
+    "description": "Yoga, HIIT, Zumba and more offered weekly!",
+    "image": "images/class.jpg"
+  },
+  {
+    "title": "Health Tips",
+    "description": "Daily blog posts to keep you informed and motivated.",
+    "image": "images/tips.jpg"
+  },
+  {
+    "title": "Personal Coaching",
+    "description": "Work one-on-one with certified health professionals.",
+    "image": "images/coaching.jpg"
+  },
+  {
+    "title": "Instructors",
+    "description": "Meet our expert trainers and coaches.",
+    "image": "images/instructors.jpg"
+  },
+  {
+    "title": "Member Success Stories",
+    "description": "Inspiring transformations from our community.",
+    "image": "images/success.jpg"
+  }
+]
