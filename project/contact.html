@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact and Location page for Community Fitness and Wellness Center. Reach us easily and get directions to our center.">
+  <meta name="author" content="Akpee Barisitom">
+  <meta property="og:title" content="Contact Us - Community Fitness & Wellness Center">
+  <meta property="og:description" content="Get in touch or visit our center. Find our contact form and location map here.">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/contact_small.css">
+  <link rel="stylesheet" href="styles/contact_large.css">
+  <title>Contact Us | Community Fitness & Wellness Center</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50">
+      Community Fitness & Wellness Center 
+    </div>
+    <button id="myButton"></button>
+
+    <nav>
+      <ul class="menuLinks" id="menuLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html" class="active">Schedule</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <p>Use the form below to reach us or find our location on the map.</p>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="location">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.933565493887!2d-122.0842496846892!3d37.42199997982679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b0efb7ef27%3A0xf93b57528725b8c0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1687218123456!5m2!1sen!2sus" 
+          width="100%" 
+          height="300" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Community Fitness & Wellness Center. All rights reserved.</p>
+    <p><a href="attributions.html">Attributions</a></p>
+  </footer>
+
+  <script type="module" src="scripts/contact.js"></script>
+</body>
+</html>
