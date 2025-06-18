@@ -324,3 +324,60 @@ footer a:hover {
 }
 
 
+/* Fixing Missing Classes */
+
+/* Section for Training Categories */
+.showFitness {
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.showType {
+  font-size: 1.5rem;
+  color: #4a007d;
+  margin: 0.5rem 0;
+}
+
+.showgoal {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.showDuration {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Instructors Section */
+.instructor {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.successStories {
+  padding: 1rem;
+  background-color: #fff7ed;
+}
+
+/* Weather stats (humidity, sunrise, sunset) */
+.humidity,
+.sunrise,
+.sunset {
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+/* Visually hidden for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
