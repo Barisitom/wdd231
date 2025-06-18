@@ -1,11 +1,10 @@
 import { fitness } from "../data/fitness.js";
 import { instructor } from "../data/instructors.js";
-import{successStories} from "../data/sucess.mjs"
+import { successStories } from "../data/sucess.mjs";
 
-
-const showType = document.querySelector('#showType')
-const showgoal = document.querySelector('#showgoal')
-const showDuration = document.querySelector('#showDuration')
+const showType = document.querySelector('#showType');
+const showgoal = document.querySelector('#showgoal');
+const showDuration = document.querySelector('#showDuration');
 
 const message = document.getElementById('visit-message');
 const lastVisit = localStorage.getItem('lastVisit');
@@ -16,7 +15,6 @@ hamburgerElement.addEventListener('click', () => {
   navElement.classList.toggle('open');
   hamburgerElement.classList.toggle('open');
 });
-
 
 const fitnessContainer = document.getElementById("showFitness");
 fitness.forEach((item) => {
@@ -63,7 +61,6 @@ successStories.forEach((story) => {
   successContainer.appendChild(card);
 });
 
-
 // Weather coding section
 const myTown = document.querySelector('#town');
 const myDescription = document.querySelector('#description');
@@ -81,38 +78,34 @@ const myLong = "6.972180888108137";
 
 const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
-
-
-
 async function apiFetch() {
   try {
     const response = await fetch(myURL);
     if (response.ok) {
       const data = await response.json();
-     
-       displayResults(data); // Uncomment when ready to use
+      displayResults(data);
     } else {
       throw Error(await response.text());
     }
   } catch (error) {
-    console.log(error);
+    // Optionally log errors during development
+    // console.error(error);
   }
 }
 
 apiFetch();
 
-// Dispay JSON data into my web page
+// Display JSON data into my web page
 function displayResults(data) {
-    myTown.innerHTML = data.name
-    myDescription.innerHTML = data.weather[0].description;
-    myTemperature.innerHTML = `${data.main.temp}&deg:F`;
-    myHumidity.innerHTML = `${data.main.humidity}&deg:F`
-    mySunrise.innerHTML = `${data.sys.sunrise}`
-    mySunset.innerHTML = `${data.sys.sunset}`
-    myTemHigh.innerHTML = `${data.main.temp_max} &deg:F`
-    myTemLow.innerHTML = `${data.main.temp_min} &deg:F`
-    const iconsrc =  `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    myGraphic.setAttribute('SRC', iconsrc);
-    myGraphic.setAttribute('alt', data.weather[0].description);
+  myTown.innerHTML = data.name;
+  myDescription.innerHTML = data.weather[0].description;
+  myTemperature.innerHTML = `${data.main.temp}&deg;F`;
+  myHumidity.innerHTML = `${data.main.humidity}%`;
+  mySunrise.innerHTML = `${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}`;
+  mySunset.innerHTML = `${new Date(data.sys.sunset * 1000).toLocaleTimeString()}`;
+  myTemHigh.innerHTML = `${data.main.temp_max} &deg;F`;
+  myTemLow.innerHTML = `${data.main.temp_min} &deg;F`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  myGraphic.setAttribute('src', iconsrc);
+  myGraphic.setAttribute('alt', data.weather[0].description);
 }
-
