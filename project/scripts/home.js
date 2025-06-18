@@ -1,7 +1,7 @@
 import { fitness } from "../data/fitness.js";
 import { instructor } from "../data/instructors.js";
 import{successStories} from "../data/sucess.mjs"
-//console.log(fitness)
+
 
 const showType = document.querySelector('#showType')
 const showgoal = document.querySelector('#showgoal')
@@ -89,7 +89,7 @@ async function apiFetch() {
     const response = await fetch(myURL);
     if (response.ok) {
       const data = await response.json();
-     // console.log(data); // for testing
+     
        displayResults(data); // Uncomment when ready to use
     } else {
       throw Error(await response.text());
