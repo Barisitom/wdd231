@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Community Fitness and Wellness Center - Explore our fitness classes, wellness tips, and success stories." />
-  <meta name="author" content="Barisitom Akpee" />
-  <meta property="og:title" content="Community Fitness and Wellness Center" />
-  <meta property="og:description" content="Stay fit and healthy with us. Join today!" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Community Fitness and Wellness Center - Explore our fitness classes, wellness tips, and success stories.">
+  <meta name="author" content="Barisitom Akpee">
+  <meta property="og:title" content="Community Fitness and Wellness Center">
+  <meta property="og:description" content="Stay fit and healthy with us. Join today!">
   <meta property="og:image" content="https://barisitom.github.io/wdd231/project/images/logo.webp">
   <meta property="og:url" content="https://barisitom.github.io/wdd231/project/index.html">
-  <link rel="icon" href="images/favicon2.ico" />
-  <link rel="stylesheet" href="styles/schedule_small.css" />
-   <link rel="stylesheet" href="styles/schedule_large.css" />
+  <link rel="icon" href="images/favicon2.ico">
+  <link rel="stylesheet" href="styles/schedule_small.css">
+  <link rel="stylesheet" href="styles/schedule_large.css">
   <title>Community Fitness & Wellness Center</title>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50"loading="lazy">
+      <img src="images/logo.webp" alt="Develop Chamber Logo" width="50" height="50" loading="lazy">
       Community Fitness & Wellness Center 
     </div>
-    <button id="myButton"></button>
-
+    <button id="myButton" aria-label="Toggle navigation menu"></button>
     <nav>
       <ul class="menuLinks" id="menuLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="schedule.html" class="active">Schedule</a></li>
         <li><a href="contact.html">Contact</a></li>
-    
       </ul>
     </nav>
   </header>
+
   <main>
     <section id="shedule" class="shedule">
       <h1>TRAINING SCHEDULE</h1>
       <!-- JavaScript will populate this -->
     </section>
+
     <section id="payment" class="payment">
-     
-    </section id="showHere">
+      <h2>Payment Plans</h2>
+      <!-- JavaScript will populate this -->
+    </section>
+
+    <section id="showHere">
+      <!-- Additional dynamic content if needed -->
+    </section>
+
     <dialog id="mydialog">
       <form method="get" action="thankyou.html" id="joinForm">
-        <button id="close" class="close">X</button>
-      <label for="firstName">
-        First Name:
-        <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
-      </label>
+        <button id="close" class="close" type="button">X</button>
 
-      <label for="lastName">
-        Last Name:
-        <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
-      </label>
+        <label for="firstName">
+          First Name:
+          <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+        </label>
 
-      <label for="email">
-        Email:
-        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email">
-      </label>
+        <label for="lastName">
+          Last Name:
+          <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+        </label>
 
-      <label for="mobile">
-        Mobile Phone:
-        <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number">
-      </label>
+        <label for="email">
+          Email:
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email">
+        </label>
 
-      <label for="choicePlan">
-        Plan of Choice:
-        <input type="text" id="choicePlan" name="choicePlan" required autocomplete="organization" title="Enter your choice of plan">
-      </label>
+        <label for="mobile">
+          Mobile Phone:
+          <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number">
+        </label>
 
-      <input type="hidden" name="timestamp" id="timestamp">
-      <input type="submit" value="Submit ">
-    </form>
+        <label for="choicePlan">
+          Plan of Choice:
+          <input type="text" id="choicePlan" name="choicePlan" required autocomplete="organization" title="Enter your choice of plan">
+        </label>
 
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input type="submit" value="Submit">
+      </form>
     </dialog>
   </main>
 
@@ -86,6 +92,6 @@
     <a href="video-demo-link">Project Demo Video</a>
   </footer>
 
-  <script type="module" src="scripts/schedule.js" ></script>
+  <script type="module" src="scripts/schedule.js"></script>
 </body>
 </html>
