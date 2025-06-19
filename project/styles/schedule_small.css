@@ -200,7 +200,15 @@ ul.menuLinks li a.active {
   text-align: left;
   margin-top: 0.5rem;
 }
-
+footer {
+  background-color: #1a0033;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 5px solid #1abc9c;
+}
+  
 footer p {
   margin: 0.5rem 0;
 }
