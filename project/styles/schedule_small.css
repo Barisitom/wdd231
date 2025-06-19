@@ -1,7 +1,7 @@
 /* Small view styles */
 
 header {
-  background-color: rgb(56, 55, 55);
+  background-color: #1a0033; /* Improved contrast */
 }
 
 .logo {
@@ -14,9 +14,8 @@ header {
   font-weight: bold;
 }
 
-.logo img{
+.logo img {
   padding: 20px;
- 
 }
 
 h1 {
@@ -24,20 +23,22 @@ h1 {
   padding: 20px;
   margin: 0;
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a2a72; /* Ensure heading contrast */
 }
 
 nav {
-  background-color: rgb(192, 185, 185);
+  background-color: #d4c0e1;
   margin: 0;
   padding: 0;
-  color: rgb(47, 2, 58);
+  color: #1a0033;
 }
 
 #myButton {
   font-size: 2rem;
   background: none;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -45,11 +46,11 @@ nav {
 }
 
 #myButton::before {
-  content: '\2630'; /* Hamburger icon */
+  content: '\2630';
 }
 
 #myButton.open::before {
-  content: 'x'; /* Close icon */
+  content: 'x';
 }
 
 ul.menuLinks {
@@ -66,14 +67,17 @@ ul.menuLinks.open {
 ul.menuLinks li a {
   display: block;
   padding: 0.75rem 2vw;
-  color: rgb(47, 2, 58);
+  color: #1a0033;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-ul.menuLinks li a:hover {
-  background-color: rgb(227, 151, 247);
-  color: black;
+ul.menuLinks li a:hover,
+ul.menuLinks li a.active {
+  background-color: #b38cd9;
+  color: #fff;
+  border-radius: 6px;
 }
 
 .view-toggle {
@@ -82,8 +86,6 @@ ul.menuLinks li a:hover {
   margin: 1rem;
 }
 
-
-/* Common Schedule Styling */
 .shedule {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +110,7 @@ ul.menuLinks li a:hover {
 }
 
 .card-header {
-  background-color: rgb(69, 2, 71);
+  background-color: #2a2a72;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -141,9 +143,6 @@ ul.menuLinks li a:hover {
 .card-info p {
   margin: 0.5rem 0;
 }
-
-
-
 
 .payment {
   padding: 2rem;
@@ -231,7 +230,6 @@ footer a:hover {
   color: #fff;
 }
 
-
 dialog {
   border: none;
   border-radius: var(--border-radius);
@@ -254,12 +252,12 @@ form input[type="tel"] {
   padding: 0.8rem;
   margin-top: 0.25rem;
   border: 1px solid #ccc;
-  border-radius:5px;
-  font-size:25px;
+  border-radius: 5px;
+  font-size: 1.1rem;
 }
 
 form input[type="submit"] {
-  background-color: rgb(47, 2, 58);
+  background-color: #1a0033;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -267,17 +265,15 @@ form input[type="submit"] {
   cursor: pointer;
   margin-top: 1rem;
   font-size: large;
-  float:right;
-  
+  float: right;
 }
 
 .close {
-  background: transparent;
+  background: #1a0033;
   border: none;
   font-size: 1.2rem;
   float: right;
   cursor: pointer;
-  background-color: rgb(47, 2, 58);
   color: white;
   padding: 7px;
 }
