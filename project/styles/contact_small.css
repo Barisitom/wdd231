@@ -12,7 +12,7 @@
 /* Small view styles */
 
 header {
-  background-color: rgb(56, 55, 55);
+  background-color:  #1a0033;
 }
 
 .logo {
@@ -39,10 +39,10 @@ section h1 {
 }
 
 nav {
-  background-color: rgb(192, 185, 185);
+  background-color: #d4c0e1;
   margin: 0;
   padding: 0;
-  color: rgb(47, 2, 58);
+  color: #1a0033;
 }
 
 #myButton {
@@ -82,15 +82,14 @@ ul.menuLinks li a {
   color: #1a0033;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-ul.menuLinks li a:hover {
-  background-color: rgb(227, 151, 247);
-  color: black;
-}
-
-.active :hover{
-  text-decoration: underline
+ul.menuLinks li a:hover,
+ul.menuLinks li a.active {
+  background-color: #b38cd9;
+  color: #fff;
+  border-radius: 6px;
 }
 
 .view-toggle {
@@ -150,13 +149,37 @@ main {
   border: 0;
   border-radius: 8px;
 }
+footer{
+  background-color:  #1a0033;
+}
 
-footer {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .socials {
+  margin-top: 1rem;
+}
+
+footer .socials a {
+  margin: 0 1rem;
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .socials a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 @media (max-width: 768px) {
