@@ -194,7 +194,6 @@ footer a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: var(--primary-color);
     width: 100%;
   }
 
